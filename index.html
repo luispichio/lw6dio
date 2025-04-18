@@ -1,0 +1,186 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="public/assets/styles/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="header"></div>
+    <img width="100%" src="./public/assets/images/header.webp">
+    <ul class="toolbar">
+        <li><a class="active" href="#">Acerca de</a></li>
+        <li><a href="#equipment">Equipamiento</a></li>
+        <li><a href="#activity">Actividad</a></li>
+        <li><a href="#proyects">Proyectos</a></li>
+    </ul>
+
+    <div class="content">
+
+        <section class="section">
+            <p style="font-size: 32;">👋 ¡Hola colega, gracias por visitar mi página!</p>
+        </section>
+
+        <a id="about"></a>
+        <section>
+            <h3 class="title">Acerca de</h3>
+            <p>Mi gusto por la radioafición viene de familia: crecí rodeado de equipos, antenas, QSO's, clubes y
+                encuentros gracias a mis padres, ambos radioaficionados muy activos. Desde chico estuve inmerso en este
+                apasionante mundo (miles de horas de escucha 😄, cursos para radioaficionados, packet radio,
+                mantenimiento de estaciones, técnica, etc.), mucho antes de tener mi propia licencia.</p>
+            <p>Obtuve mi licencia a fines de los años 90, siendo adolescente, aunque para ese entonces ya había perdido
+                parte de la motivación de los años previos. Prioricé estudios y trabajo, y terminé dejando la actividad
+                de lado. Recién muchos años después, en 2024 (ya con 43), la llama se volvió a encender —y con más
+                fuerza que nunca.</p>
+            <p>Hoy en día estoy activo principalmente en FT8 en HF (10, 15 y 20 metros), aunque mi viejo BBS de packet
+                radio sigue operativo 😄.</p>
+            <p>Me encanta experimentar con todo lo relacionado a la electrónica, la radiofrecuencia y las antenas.
+                Construyo mis propios equipos y antenas, y tengo un especial interés en el trabajo en QRP con equipos de
+                diseño y fabricación propia.</p>
+            <p>Profesionalmente, me desempeño como ingeniero full stack en IoT, lo que me permite combinar lo mejor de
+                dos mundos: programación, hardware, sistemas embebidos y, por supuesto, radio.</p>
+            <p>📁 Podés encontrar algunos de mis proyectos en mi portfolio, blog o GitHub, donde comparto desarrollos,
+                ideas y experimentos que cruzan la electrónica, la radioafición y el software.</p>
+            <p>¡Gracias de nuevo por pasar! Nos leemos o escuchamos. 73 ✨</p>
+        </section>
+
+        <a id="equipment"></a>
+        <section>
+            <h3 class="title">Equipamiento</h3>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="./public/assets/images/logo_lw6dio_256x256.jpeg" alt="">
+                    <div>
+                        <h4>Radios</h4>
+                        <ul>
+                            <li>Kenwood TS-450S</li>
+                            <li>Baofeng UV-5R</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./public/assets/images/logo_lw6dio_256x256.jpeg" alt="">
+                    <div>
+                        <h4>Antenas</h4>
+                        <ul>
+                            <li>Delta Loops 10 / 15mts</li>
+                            <li>Verticales de 1/4 de onda para 10 / 20mts</li>
+                            <li>"Random-wire" 10, 15, 20, 40mts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./public/assets/images/logo_lw6dio_256x256.jpeg" alt="">
+                    <div>
+                        <h4>Accesorios</h4>
+                        <ul>
+                            <li>Kenwood MC-60</li>
+                            <li>Interfaz digital / audio aislada</li>
+                            <li>Sound Blaster SBX Studio Pro</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./public/assets/images/logo_lw6dio_256x256.jpeg" alt="">
+                    <div>
+                        <h4>Software</h4>
+                        <ul>
+                            <li>Debian 12</li>
+                            <li>WSJTX / JTDX</li>
+                            <li>GridTracker2</li>
+                            <li>CQRLOG</li>
+                        </ul>
+                    </div>
+                </div>                                
+            </div>
+        </section>
+
+        <a id="activity"></a>
+        <section>
+            <h3 class="title">Actividad</h3>
+            <div class="section-contents">
+                <p>
+                    Sincronizo mi actividad de radio en tiempo real / regularmente en las siguientes plataformas:
+                </p>
+                <p>
+                    <iframe frameborder="0" height="510" scrolling="no" src="https://logbook.qrz.com/lbstat/LW6DIO/"
+                        width="800px"></iframe>
+                </p>
+                <p>
+                <h4>Ultimos 20 contactos en Club Log</h4>
+                <iframe frameborder="0" height="550" name="iframe" scrolling="no"
+                    src="https://clublog.org/last10_iframe.php?call=LW6DIO&amp;limit=20" width="500"></iframe>
+                </p>
+                <p>
+                <h4>En vivo (livestream de Club Log)</h4>
+                <iframe id="livestream" frameborder="0" scrolling="no" src="https://clublog.org/livestream/lw6dio"
+                    width="1100px" height="680px"></iframe>
+                </p>
+            </div>
+        </section>
+
+        <a id="proyects"></a>
+        <section>
+            <h3 class="title">Proyectos</h3>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="./public/assets/images/logo_locos_por_la_radio_256x256.jpeg" alt="">
+                    <div>
+                        <h4>Locos x Radio</h4>
+                        <p>Radio, antenas, electrónica, programación, experimentación y divulgación.</p>
+                        <p>Todo en un único lugar.</p>
+                        <a href="https://locosporlaradio.com.ar/" target="_blank">Leer más...</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./public/assets/images/telnet4dosfbb.jpg" alt="">
+                    <div>
+                        <h4>Telnet4DosFBB</h4>
+                        <p>"Falso módem" telefónico <-> telnet para DosFBB.</p>
+                        <p>Permite conectar DosFBB a internet vía telnet.</p>
+                        <a href="https://github.com/luispichio/Telnet4DosFBB" target="_blank">Leer más...</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./public/assets/images/logo_lw6dio_256x256.jpeg" alt="">
+                    <div>
+                        <h4>TresDe</h4>
+                        <p>Repositorio de diseños en 3D (propios) para impresión FDM.</p>
+                        <a href="https://github.com/luispichio/TresDe" target="_blank">Leer más...</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./public/assets/images/simple_repeater_controller.jpeg" alt="">
+                    <div>
+                        <h4>Simple Repeater Controller</h4>
+                        <p>Controlador simple para repetidora "de hombre pobre" (en en caso del ejemplo de banda
+                            cruzada)</p>
+                        <a href="https://github.com/luispichio/SimpleRepeaterController" target="_blank">Leer más...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="title">Reconocimientos</h3>
+            <h2>¡Mucho por hacer aquí!</h2>
+        </section>
+
+        <section>
+            <a href="https://info.flagcounter.com/9y8g"><img
+                    src="https://s01.flagcounter.com/count2/9y8g/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_40/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+                    alt="Flag Counter" border="0"></a>
+        </section>
+
+    </div>
+
+    <div class="footer">
+    </div>
+
+    <div class="site-info">
+        <p>© 2025 | LW6DIO | Luis Omar Pichio</p>
+    </div>
+</body>
+
+</html>

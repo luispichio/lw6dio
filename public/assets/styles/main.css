@@ -1,0 +1,158 @@
+#t_bio.biodiv {
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: #1d2327;
+    height: 16px;
+}
+
+.content {
+    width: 100%;
+    padding-left: 5%;
+}
+
+html {
+    font-family: "Fira Sans", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    font-size: 22px;
+}
+
+body {
+    /*background-color: #d2d9df;*/
+    /* color: white; */
+    /*font-family: 'Roboto';
+    font-size: 22px*/
+}
+
+.content {
+    padding-left: 16px;
+    max-width: 90%;
+}
+
+section {
+    display: block;
+    padding-top: 16px;
+}
+
+.section-contents {
+    padding-left: 16px;
+}
+
+#livestream {
+    zoom: 0.90;
+    -moz-transform: scale(0.90);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.90);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.90);
+    -webkit-transform-origin: 0 0;
+}
+
+.footer {
+    width: 100%;
+    background-color: #464647;
+    height: 64;
+    margin-top: 32px;
+}
+
+.site-info {
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    height: 64;
+    text-align: center;
+}
+
+.active {
+    background-color: #67b3b6;
+}
+
+.toolbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.toolbar li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+.toolbar li:last-child {
+    border-right: none;
+}
+
+.toolbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.toolbar li a:hover {
+    background-color: #111;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+.card {
+    background-color: #fafafa;
+    /*padding: 16px;*/
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card div {
+    padding: 2px 16px 16px 16px;
+}
+
+.title {
+    position: relative;
+    display: inline-block;
+    color: white;
+    background-color: #67b3b6;
+    padding: 5px 10px;
+    margin: 0;
+    z-index: -10;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 100%;
+    width: calc(93vw - 100%);
+    height: 3px;
+    background-color: #67b3b6;
+    transform: translateY(-50%);
+}
+
+a {
+    color: #67b3b6;
+}
