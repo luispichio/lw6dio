@@ -10,44 +10,39 @@
     <div class="header"></div>
     <img width="100%" src="./public/assets/images/header.webp">
     <ul class="toolbar">
-        <li><a class="active" href="#">Acerca de</a></li>
-        <li><a href="#equipment">Equipamiento</a></li>
-        <li><a href="#activity">Actividad</a></li>
-        <li><a href="#proyects">Proyectos</a></li>
+        <li><a href="#equipment">Equipment</a></li>
+        <li><a href="#activity">Activity</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#proyects">Projects</a></li>
     </ul>
 
     <div class="content">
-
         <section class="section">
-            <p style="font-size: 32;">👋 ¡Hola colega, gracias por visitar mi página!</p>
-        </section>
-
-        <a id="about"></a>
-        <section>
-            <h3 class="title">Acerca de</h3>
-            <p>Mi gusto por la radioafición viene de familia: crecí rodeado de equipos, antenas, QSO's, clubes y
-                encuentros gracias a mis padres, ambos radioaficionados muy activos. Desde chico estuve inmerso en este
-                apasionante mundo (miles de horas de escucha 😄, cursos para radioaficionados, packet radio,
-                mantenimiento de estaciones, técnica, etc.), mucho antes de tener mi propia licencia.</p>
-            <p>Obtuve mi licencia a fines de los años 90, siendo adolescente, aunque para ese entonces ya había perdido
-                parte de la motivación de los años previos. Prioricé estudios y trabajo, y terminé dejando la actividad
-                de lado. Recién muchos años después, en 2024 (ya con 43), la llama se volvió a encender —y con más
-                fuerza que nunca.</p>
-            <p>Hoy en día estoy activo principalmente en FT8 en HF (10, 15 y 20 metros), aunque mi viejo BBS de packet
-                radio sigue operativo 😄.</p>
-            <p>Me encanta experimentar con todo lo relacionado a la electrónica, la radiofrecuencia y las antenas.
-                Construyo mis propios equipos y antenas, y tengo un especial interés en el trabajo en QRP con equipos de
-                diseño y fabricación propia.</p>
-            <p>Profesionalmente, me desempeño como ingeniero full stack en IoT, lo que me permite combinar lo mejor de
-                dos mundos: programación, hardware, sistemas embebidos y, por supuesto, radio.</p>
-            <p>📁 Podés encontrar algunos de mis proyectos en mi portfolio, blog o GitHub, donde comparto desarrollos,
-                ideas y experimentos que cruzan la electrónica, la radioafición y el software.</p>
-            <p>¡Gracias de nuevo por pasar! Nos leemos o escuchamos. 73 ✨</p>
+            <div class="grid-container">
+                <div>
+                    <p style="font-size: 32;">👋 ¡Hola colega, gracias por visitar mi página!</p>
+                    Mi nombre es Luis y soy de 25 de Mayo, Buenos Aires, Argentina.
+                    Soy un apasionado ❤️ de la radioafición desde muy chico (allá por 1993).
+                    Me fascinan la electrónica, las antenas, los modos digitales, los DX, el QRP y el diseño y
+                    fabricación de mis propios equipos.
+                    Actualmente estoy bastante activo en FT8, principalmente en las bandas de 10, 15 y 20 metros.
+                    Confirmo QSO únicamente a través de LoTW, Club Log y QRZ.
+                </div>
+                <div>
+                    <p style="font-size: 32;">👋 Hi there, thanks for visiting my page!</p>
+                    My name is Luis, and I'm from 25 de Mayo, Buenos Aires, Argentina.
+                    I've been passionate ❤️ about amateur radio since I was a kid (around 1993).
+                    I'm fascinated by electronics, antennas, digital modes, DXing, QRP, and designing/building my own
+                    equipment.
+                    I'm currently quite active on FT8, mainly on the 10, 15, and 20 meter bands.
+                    I confirm QSOs exclusively via LoTW, Club Log, and QRZ.
+                </div>
+            </div>
         </section>
 
         <a id="equipment"></a>
         <section>
-            <h3 class="title">Equipamiento</h3>
+            <h3 class="title">Equipment</h3>
             <div class="grid-container">
                 <div class="card">
                     <img src="./public/assets/images/logo_lw6dio_256x256.jpeg" alt="">
@@ -92,37 +87,92 @@
                             <li>CQRLOG</li>
                         </ul>
                     </div>
-                </div>                                
+                </div>
             </div>
         </section>
 
         <a id="activity"></a>
         <section>
-            <h3 class="title">Actividad</h3>
+            <h3 class="title">Activity</h3>
             <div class="section-contents">
-                <p>
-                    Sincronizo mi actividad de radio en tiempo real / regularmente en las siguientes plataformas:
-                </p>
-                <p>
-                    <iframe frameborder="0" height="510" scrolling="no" src="https://logbook.qrz.com/lbstat/LW6DIO/"
-                        width="800px"></iframe>
-                </p>
-                <p>
-                <h4>Ultimos 20 contactos en Club Log</h4>
-                <iframe frameborder="0" height="550" name="iframe" scrolling="no"
-                    src="https://clublog.org/last10_iframe.php?call=LW6DIO&amp;limit=20" width="500"></iframe>
-                </p>
-                <p>
-                <h4>En vivo (livestream de Club Log)</h4>
-                <iframe id="livestream" frameborder="0" scrolling="no" src="https://clublog.org/livestream/lw6dio"
-                    width="1100px" height="680px"></iframe>
-                </p>
+                Sincronizo mi actividad de radio en tiempo real / regularmente en las siguientes plataformas:
+            </div>
+            <div class="flex-container">
+                <div>
+                    <iframe frameborder="0" height="510" scrolling="no" src="https://logbook.qrz.com/lbstat/LW6DIO/" width="650px"></iframe>
+                </div>
+                <div>
+                    <iframe frameborder="0" height="550" name="iframe" scrolling="no" src="https://clublog.org/last10_iframe.php?call=LW6DIO&amp;limit=20" width="500"></iframe>
+                </div>
+            </div>
+            <h4>En vivo (livestream de Club Log)</h4>
+            <iframe id="livestream" frameborder="0" scrolling="no" src="https://clublog.org/livestream/lw6dio"
+                width="1100px" height="680px"></iframe>
+        </section>
+
+        <a id="about"></a>
+        <section>
+            <h3 class="title">About</h3>
+            <div class="grid-container">
+                <div>
+                    <p>Mi gusto por la radioafición viene de familia: crecí rodeado de equipos, antenas, QSO's, clubes y
+                        encuentros gracias a mis padres, ambos radioaficionados muy activos. Desde chico estuve inmerso
+                        en este
+                        apasionante mundo (miles de horas de escucha 😄, cursos para radioaficionados, packet radio,
+                        mantenimiento de estaciones, técnica, etc.), mucho antes de tener mi propia licencia.</p>
+                    <p>Obtuve mi licencia a fines de los años 90, siendo adolescente, aunque para ese entonces ya había
+                        perdido
+                        parte de la motivación de los años previos. Prioricé estudios y trabajo, y terminé dejando la
+                        actividad
+                        de lado. Recién muchos años después, en 2024 (ya con 43), la llama se volvió a encender —y con
+                        más
+                        fuerza que nunca.</p>
+                    <p>Hoy en día estoy activo principalmente en FT8 en HF (10, 15 y 20 metros), aunque mi viejo BBS de
+                        packet
+                        radio sigue operativo 😄.</p>
+                    <p>Me encanta experimentar con todo lo relacionado a la electrónica, la radiofrecuencia y las
+                        antenas.
+                        Construyo mis propios equipos y antenas, y tengo un especial interés en el trabajo en QRP con
+                        equipos de
+                        diseño y fabricación propia.</p>
+                    <p>Profesionalmente, me desempeño como ingeniero full stack en IoT, lo que me permite combinar lo
+                        mejor de
+                        dos mundos: programación, hardware, sistemas embebidos y, por supuesto, radio.</p>
+                    <p>📁 Podés encontrar algunos de mis proyectos en mi portfolio, blog o GitHub, donde comparto
+                        desarrollos,
+                        ideas y experimentos que cruzan la electrónica, la radioafición y el software.</p>
+                    <p>¡Gracias de nuevo por pasar! Nos leemos o escuchamos. 73 ✨</p>
+                </div>
+                <div>
+                    <p>My passion for amateur radio runs in the family: I grew up surrounded by rigs, antennas, QSOs,
+                        clubs, and gatherings, thanks to my parents, both very active radio amateurs. I was immersed in
+                        this
+                        fascinating world from a very young age — thousands of hours listening 😄, attending ham radio
+                        courses, exploring packet radio, maintaining stations, learning technical stuff, and more — long
+                        before I had my own license.</p>
+                    <p>I got licensed in the late '90s, as a teenager, but by then my motivation had faded a bit. I
+                        focused
+                        on studies and work, and eventually stepped away from the hobby. Many years later, in 2024 (at
+                        43),
+                        the spark reignited — and stronger than ever.</p>
+                    <p>Nowadays, I'm mainly active on FT8 in HF bands (10, 15, and 20 meters), although my old packet
+                        radio
+                        BBS is still up and running 😄.</p>
+                    <p>I love experimenting with everything related to electronics, RF, and antennas. I build my own
+                        rigs
+                        and antennas, and have a special interest in QRP operations with fully homebrewed equipment.</p>
+                    <p>Professionally, I work as a full stack IoT engineer, which allows me to combine the best of both
+                        worlds: programming, hardware, embedded systems — and, of course, radio.
+                    <p>📁 You can find some of my projects on my portfolio, blog, or GitHub, where I share designs,
+                        experiments, and ideas that bring together electronics, ham radio, and software.</p>
+                    <p>Thanks again for stopping by! Hope to read or hear you soon on the air. 73 ✨</p>
+                </div>
             </div>
         </section>
 
         <a id="proyects"></a>
         <section>
-            <h3 class="title">Proyectos</h3>
+            <h3 class="title">Projects</h3>
             <div class="grid-container">
                 <div class="card">
                     <img src="./public/assets/images/logo_locos_por_la_radio_256x256.jpeg" alt="">
@@ -163,8 +213,15 @@
         </section>
 
         <section>
-            <h3 class="title">Reconocimientos</h3>
-            <h2>¡Mucho por hacer aquí!</h2>
+            <h3 class="title">Awards</h3>
+            <div class="grid-container">
+                <div>
+                    <h2>¡Mucho por hacer aquí!</h2>
+                </div>
+                <div>
+                    <h2>A lot to do here!</h2>
+                </div>
+            </div>
         </section>
 
         <section>
@@ -176,6 +233,10 @@
     </div>
 
     <div class="footer">
+        <img src="public/assets/icons/blogger.png">
+        <img src="public/assets/icons/github.png">
+        <img src="public/assets/icons/linkedin.png">
+        <img src="public/assets/icons/twitter.png">
     </div>
 
     <div class="site-info">

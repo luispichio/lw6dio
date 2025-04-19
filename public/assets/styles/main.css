@@ -56,6 +56,9 @@ section {
     background-color: #464647;
     height: 64;
     margin-top: 32px;
+    text-align: right;
+    align-items: center;
+    align-content: center;
 }
 
 .site-info {
@@ -102,9 +105,18 @@ section {
     background-color: #111;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
     box-sizing: border-box;
     padding: 16px;
