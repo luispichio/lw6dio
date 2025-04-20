@@ -112,14 +112,16 @@ section {
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 16px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 24px;
     box-sizing: border-box;
     padding: 16px;
+    margin-bottom: 16px;
 }
 
 .card {
@@ -167,4 +169,15 @@ section {
 
 a {
     color: #67b3b6;
+}
+
+.social-icon {
+    width: auto;
+    height: 42;
+    padding: 8;
+    padding-top: 12;
+}
+
+.social-icon:hover {
+    filter: invert(42%) sepia(88%) saturate(1644%) hue-rotate(163deg) brightness(97%) contrast(101%);
 }
