@@ -1,6 +1,9 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LW6DIO | Luis Pichio</title>
     <link rel="stylesheet" href="public/assets/styles/main.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <script type="text/javascript" language="javascript" src="https://www.hrdlog.net/hrdlog.js"></script>
@@ -16,17 +19,19 @@
 </head>
 
 <body>
-
-    <div class="header"></div>
-    <img width="100%" src="./public/assets/images/header.webp">
-    <ul class="toolbar">
-        <li><a href="#equipment">Equipment</a></li>
-        <li><a href="#activity">Activity</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#proyects">Projects</a></li>
-    </ul>
-
-    <div class="content">
+    <header>
+        <div class="header"></div>
+        <img width="100%" src="./public/assets/images/header.webp">
+    </header>
+    <nav>
+        <ul class="toolbar">
+            <li><a href="#equipment">Equipment</a></li>
+            <li><a href="#activity">Activity</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#proyects">Projects</a></li>
+        </ul>
+    </nav>
+    <main class="content">
         <section>
             <div class="grid-container">
                 <div>
@@ -36,7 +41,7 @@
                     Me fascinan la electrónica, las antenas, los modos digitales, los DX, el QRP y el diseño y
                     fabricación de mis propios equipos.
                     Actualmente estoy bastante activo en FT8, principalmente en las bandas de 10, 15 y 20 metros.
-                    Confirmo QSO únicamente a través de LoTW, Club Log y QRZ.
+                    <p><b>Confirmo QSO únicamente a través de LoTW, Club Log y QRZ.</b></p>
                 </div>
                 <div>
                     <p style="font-size: 32;">👋 Hi there, thanks for visiting my page!</p>
@@ -45,13 +50,12 @@
                     I'm fascinated by electronics, antennas, digital modes, DXing, QRP, and designing/building my own
                     equipment.
                     I'm currently quite active on FT8, mainly on the 10, 15, and 20 meter bands.
-                    I confirm QSOs exclusively via LoTW, Club Log, and QRZ.
+                    <p><b>I confirm QSOs exclusively via LoTW, Club Log, and QRZ.</b></p>
                 </div>
             </div>
         </section>
 
-        <a id="equipment"></a>
-        <section>
+        <section id="equipment">
             <h3 class="title">Equipment</h3>
             <div class="grid-container">
                 <div class="card">
@@ -103,8 +107,7 @@
             </div>
         </section>
 
-        <a id="activity"></a>
-        <section>
+        <section id="activity">
             <h3 class="title">Activity</h3>
             <div class="flex-container">
                 <div id="hrdlog-oa"> </div>
@@ -122,8 +125,8 @@
                 <div id="hrdlog" style="border: 1px solid gray;">www.hrdlog.net</div>
             </div>
             <div class="flex-container">
-                <iframe id="livestream" frameborder="0" scrolling="no" src="https://clublog.org/livestream/lw6dio" width="1100px"
-                    height="680px"></iframe>
+                <iframe id="livestream" frameborder="0" scrolling="no" src="https://clublog.org/livestream/lw6dio"
+                    width="1100px" height="680px"></iframe>
             </div>
             <div class="flex-container" style="gap: 32px">
                 <a href="https://clublog.org/" target="_blank"><img width="128px"
@@ -137,8 +140,7 @@
             </div>
         </section>
 
-        <a id="about"></a>
-        <section>
+        <section id="about">
             <h3 class="title">About</h3>
             <div class="grid-container">
                 <div>
@@ -197,8 +199,7 @@
             </div>
         </section>
 
-        <a id="proyects"></a>
-        <section>
+        <section id="proyects">
             <h3 class="title">Projects</h3>
             <div class="grid-container">
                 <div class="card">
@@ -239,7 +240,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="awards">
             <h3 class="title">Awards</h3>
             <div class="grid-container">
                 <div>
@@ -251,7 +252,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="visitors">
             <h3 class="title">Visitors</h3>
             <div class="grid-container">
                 <div>
@@ -262,9 +263,9 @@
             </div>
         </section>
 
-    </div>
+    </main>
 
-    <div class="footer">
+    <footer>
         <a href="https://luispichio.github.io/" target="_blank"><img class="social-icon"
                 src="public/assets/icons/lp.svg"></a>
         <a href="https://luispichio.blogspot.com/" target="_blank"><img class="social-icon"
@@ -273,7 +274,7 @@
                 src="public/assets/icons/github.svg"></a>
         <a href="https://www.linkedin.com/in/luispichio/" target="_blank"><img class="social-icon"
                 src="public/assets/icons/linkedin.svg"></a>
-    </div>
+    </footer>
 
     <div class="site-info">
         <p>© 2025 | LW6DIO | Luis Omar Pichio</p>
