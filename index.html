@@ -7,22 +7,16 @@
     <link rel="stylesheet" href="public/assets/styles/main.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="icon" type="image/png" href="public/assets/icons/lw6dio_256x256.png" />
-
-    <!-- Google Fonts -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> -->
-    <!-- CSS Reset -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
-    <!-- Milligram CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"> -->
 </head>
 
 <body>
     <header>
         <div class="header"></div>
-        <img width="100%" src="./public/assets/images/header.webp">
+        <img width="100%" src="public/assets/images/header.webp">
     </header>
     <nav>
         <ul class="toolbar">
+            <li><a href="#">#</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#equipment">Equipment</a></li>
             <li><a href="#activity">Activity</a></li>
@@ -53,66 +47,9 @@
             </div>
         </section>
 
-        <section id="about">
-            <h3 class="title">About</h3>
-            <div class="grid-container">
-                <div>
-                    <p>Mi gusto por la radioafición viene de familia: crecí rodeado de equipos, antenas, QSO's, clubes y
-                        encuentros gracias a mis padres (LU4DZ & LU2EC), ambos radioaficionados muy activos. Desde chico estuve inmerso
-                        en este
-                        apasionante mundo (miles de horas de escucha 😄, cursos para radioaficionados, packet radio,
-                        mantenimiento de estaciones, técnica, etc.), mucho antes de tener mi propia licencia.</p>
-                    <p>Obtuve mi licencia a fines de los años 90, siendo adolescente, aunque para ese entonces ya había
-                        perdido
-                        parte de la motivación de los años previos. Prioricé estudios y trabajo, y terminé dejando la
-                        actividad
-                        de lado. Recién muchos años después, en 2024 (ya con 43), la llama se volvió a encender —y con
-                        más
-                        fuerza que nunca.</p>
-                    <p>Hoy en día estoy activo principalmente en FT8 en HF (10, 15, 20 y 40 metros), aunque mi viejo BBS de
-                        packet
-                        radio sigue operativo 😄.</p>
-                    <p>Me encanta experimentar con todo lo relacionado a la electrónica, la radiofrecuencia y las
-                        antenas.
-                        Construyo mis propios equipos y antenas, y tengo un especial interés en el trabajo en QRP con
-                        equipos de
-                        diseño y fabricación propia.</p>
-                    <p>Profesionalmente, me desempeño como ingeniero full stack en IoT, lo que me permite combinar lo
-                        mejor de
-                        dos mundos: programación, hardware, sistemas embebidos y, por supuesto, radio.</p>
-                    <p>📁 Podés encontrar algunos de mis proyectos en mi portfolio, blog o GitHub, donde comparto
-                        desarrollos,
-                        ideas y experimentos que cruzan la electrónica, la radioafición y el software.</p>
-                    <p>¡Gracias de nuevo por pasar! Nos leemos o escuchamos. 73 ✨</p>
-                </div>
-                <div>
-                    <p>My passion for amateur radio runs in the family: I grew up surrounded by rigs, antennas, QSOs,
-                        clubs, and gatherings, thanks to my parents (LU4DZ & LU2EC), both very active radio amateurs. I was immersed in
-                        this
-                        fascinating world from a very young age — thousands of hours listening 😄, attending ham radio
-                        courses, exploring packet radio, maintaining stations, learning technical stuff, and more — long
-                        before I had my own license.</p>
-                    <p>I got licensed in the late '90s, as a teenager, but by then my motivation had faded a bit. I
-                        focused
-                        on studies and work, and eventually stepped away from the hobby. Many years later, in 2024 (at
-                        43),
-                        the spark reignited — and stronger than ever.</p>
-                    <p>Nowadays, I'm mainly active on FT8 in HF bands (10, 15, 20a and 40 meters), although my old packet
-                        radio
-                        BBS is still up and running 😄.</p>
-                    <p>I love experimenting with everything related to electronics, RF, and antennas. I build my own
-                        rigs
-                        and antennas, and have a special interest in QRP operations with fully homebrewed equipment.</p>
-                    <p>Professionally, I work as a full stack IoT engineer, which allows me to combine the best of both
-                        worlds: programming, hardware, embedded systems — and, of course, radio.
-                    <p>📁 You can find some of my projects on my portfolio, blog, or GitHub, where I share designs,
-                        experiments, and ideas that bring together electronics, ham radio, and software.</p>
-                    <p>Thanks again for stopping by! Hope to read or hear you soon on the air. 73 ✨</p>
-                </div>
-            </div>
-        </section>
+        <div class="separator" id="equipment"></div>
 
-        <section id="equipment">
+        <section>
             <h3 class="title">Equipment</h3>
             <div class="grid-container">
                 <div class="card">
@@ -143,8 +80,9 @@
                         <h4>Accesorios</h4>
                         <ul>
                             <li>Kenwood MC-60</li>
-                            <li>Interfaz digital / audio aislada</li>
                             <li>Sound Blaster SBX Studio Pro</li>
+                            <li>Isolated CAT interface (homebrew)</li>
+                            <li>Isolated digital audio interface (homebrew)</li>
                         </ul>
                     </div>
                 </div>
@@ -152,22 +90,35 @@
                     <img src="public/assets/images/logo_lw6dio_512x298.webp" alt="">
                     <div>
                         <h4>Software</h4>
-                        <ul>
+                        <ul class="two_column_ul">
                             <li>Debian 12</li>
                             <li>WSJTX / JTDX</li>
                             <li>GridTracker2</li>
                             <li>CQRLOG</li>
-                            <li>fldigi</li>
+                            <li>Debian 12</li>
+                            <li>WSJTX / JTDX</li>
+                            <li>GridTracker2</li>
+                            <li>CQRLOG</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="activity">
+        <div class="separator" id="activity"></div>
+
+        <section>
             <h3 class="title">Activity</h3>
-            <div class="flex-container">
+            <div class="flex-container" style="gap: 32px">
                 <div><img src="https://www.hrdlog.net/dxccplate.aspx?user=LW6DIO" /></div>
+                <a href="https://clublog.org/livestream/lw6dio" target="_blank"><img width="128px"
+                        src="public/assets/images/logo_clublog_2x.webp"></a>
+                <a href="https://www.hrdlog.net/Viewlogbook.aspx?user=LW6DIO" target="_blank"><img width="128px"
+                        src="public/assets/images/logo_hrdl_200x80.webp"></a>
+                <a href="https://lotw.arrl.org/" target="_blank"><img width="128px"
+                        src="public/assets/images/lotw_logo4.webp"></a>
+                <a href="https://www.qrz.com/db/lw6dio" target="_blank"><img width="128px"
+                        src="public/assets/images/qrz_com.svgz"></a>
             </div>
             <div class="flex-container">
                 <div>
@@ -184,28 +135,86 @@
                         width="600px" height="510px" scrolling="auto"></iframe>
                 </div>
                 <div>
-                    <iframe frameborder="0"
-                        src="https://www.hrdlog.net/hrdlogframe.aspx?user=LW6DIO&lastqso=&qsomap=800&options=disablelinks;&colors=%2399ccff;%23FFFFFF;%23EBF5FF"
-                        width="850px" height="720px" scrolling="auto"></iframe>
+
                 </div>
             </div>
             <div class="flex-container">
-                <iframe id="livestream" frameborder="0" scrolling="no" src="https://clublog.org/livestream/lw6dio"
+                <iframe frameborder="0"
+                    src="https://www.hrdlog.net/hrdlogframe.aspx?user=LW6DIO&lastqso=&qsomap=800&options=disablelinks;&colors=%2399ccff;%23FFFFFF;%23EBF5FF"
+                    width="850px" height="720px" scrolling="auto"></iframe>
+                <iframe id="livestream" frameborder="0" scrolling="yes" src="https://clublog.org/livestream/lw6dio"
                     width="1100px" height="680px"></iframe>
-            </div>
-            <div class="flex-container" style="gap: 32px">
-                <a href="https://clublog.org/" target="_blank"><img width="128px"
-                        src="public/assets/images/logo_clublog_2x.webp"></a>
-                <a href="http://www.hrdlog.net/" target="_blank"><img width="128px"
-                        src="public/assets/images/logo_hrdl_200x80.webp"></a>
-                <a href="https://lotw.arrl.org/" target="_blank"><img width="128px"
-                        src="public/assets/images/lotw_logo4.webp"></a>
-                <a href="https://www.qrz.com/" target="_blank"><img width="128px"
-                        src="public/assets/images/qrz_com.svgz"></a>
             </div>
         </section>
 
-        <section id="proyects">
+        <div class="separator" id="about"></div>
+
+        <section>
+            <h3 class="title">About</h3>
+            <div class="grid-container">
+                <div>
+                    <p>Mi gusto por la radioafición viene de familia: crecí rodeado de equipos, antenas, QSO's, clubes y
+                        encuentros gracias a mis padres (LU4DZ & LU2EC), ambos radioaficionados muy activos. Desde chico
+                        estuve inmerso
+                        en este
+                        apasionante mundo (miles de horas de escucha 😄, cursos para radioaficionados, packet radio,
+                        mantenimiento de estaciones, técnica, etc.), mucho antes de tener mi propia licencia.</p>
+                    <p>Obtuve mi licencia a fines de los años 90, siendo adolescente, aunque para ese entonces ya había
+                        perdido
+                        parte de la motivación de los años previos. Prioricé estudios y trabajo, y terminé dejando la
+                        actividad
+                        de lado. Recién muchos años después, en 2024 (ya con 43), la llama se volvió a encender —y con
+                        más
+                        fuerza que nunca.</p>
+                    <p>Hoy en día estoy activo principalmente en FT8 en HF (10, 15, 20 y 40 metros), aunque mi viejo BBS
+                        de
+                        packet
+                        radio sigue operativo 😄.</p>
+                    <p>Me encanta experimentar con todo lo relacionado a la electrónica, la radiofrecuencia y las
+                        antenas.
+                        Construyo mis propios equipos y antenas, y tengo un especial interés en el trabajo en QRP con
+                        equipos de
+                        diseño y fabricación propia.</p>
+                    <p>Profesionalmente, me desempeño como ingeniero full stack en IoT, lo que me permite combinar lo
+                        mejor de
+                        dos mundos: programación, hardware, sistemas embebidos y, por supuesto, radio.</p>
+                    <p>📁 Podés encontrar algunos de mis proyectos en mi portfolio, blog o GitHub, donde comparto
+                        desarrollos,
+                        ideas y experimentos que cruzan la electrónica, la radioafición y el software.</p>
+                    <p>¡Gracias de nuevo por pasar! Nos leemos o escuchamos. 73 ✨</p>
+                </div>
+                <div>
+                    <p>My passion for amateur radio runs in the family: I grew up surrounded by rigs, antennas, QSOs,
+                        clubs, and gatherings, thanks to my parents (LU4DZ & LU2EC), both very active radio amateurs. I
+                        was immersed in
+                        this
+                        fascinating world from a very young age — thousands of hours listening 😄, attending ham radio
+                        courses, exploring packet radio, maintaining stations, learning technical stuff, and more — long
+                        before I had my own license.</p>
+                    <p>I got licensed in the late '90s, as a teenager, but by then my motivation had faded a bit. I
+                        focused
+                        on studies and work, and eventually stepped away from the hobby. Many years later, in 2024 (at
+                        43),
+                        the spark reignited — and stronger than ever.</p>
+                    <p>Nowadays, I'm mainly active on FT8 in HF bands (10, 15, 20a and 40 meters), although my old
+                        packet
+                        radio
+                        BBS is still up and running 😄.</p>
+                    <p>I love experimenting with everything related to electronics, RF, and antennas. I build my own
+                        rigs
+                        and antennas, and have a special interest in QRP operations with fully homebrewed equipment.</p>
+                    <p>Professionally, I work as a full stack IoT engineer, which allows me to combine the best of both
+                        worlds: programming, hardware, embedded systems — and, of course, radio.
+                    <p>📁 You can find some of my projects on my portfolio, blog, or GitHub, where I share designs,
+                        experiments, and ideas that bring together electronics, ham radio, and software.</p>
+                    <p>Thanks again for stopping by! Hope to read or hear you soon on the air. 73 ✨</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="separator" id="proyects"></div>
+
+        <section>
             <h3 class="title">Projects</h3>
             <div class="grid-container">
                 <div class="card">
@@ -246,6 +255,8 @@
             </div>
         </section>
 
+        <div class="separator" id="awards"></div>
+
         <section id="awards">
             <h3 class="title">Awards</h3>
             <div class="grid-container">
@@ -258,13 +269,15 @@
             </div>
         </section>
 
+        <div class="separator" id="visitors"></div>
+
         <section id="visitors">
             <h3 class="title">Visitors</h3>
             <div class="grid-container">
                 <div>
-                    <a href="https://info.flagcounter.com/9y8g"><img
-                            src="https://s01.flagcounter.com/countxl/9y8g/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_40/viewers_3/labels_1/pageviews_1/flags_1/percent_0/"
-                            alt="Free counters!" border="0"></a>
+                    <a href="https://info.flagcounter.com/9y8g"><img style="max-width: 100%;"
+                            src="https://s01.flagcounter.com/countxl/9y8g/bg_FFFFFF/txt_000000/border_CCCCCC/columns_4/maxflags_40/viewers_3/labels_1/pageviews_1/flags_1/percent_1/"
+                            alt="Free counters!"></a>
                 </div>
             </div>
         </section>
@@ -278,7 +291,7 @@
                 src="public/assets/icons/blogger.svg"></a>
         <a href="https://github.com/luispichio" target="_blank"><img class="social-icon"
                 src="public/assets/icons/github.svg"></a>
-        <a href="https://www.linkedin.com/in/luispichio/" target="_blank"><img class="social-icon"
+        <a href="https://www.linkedin.com/in/luispichio/" target="_blank"><img style="padding-right: 32px;" class="social-icon"
                 src="public/assets/icons/linkedin.svg"></a>
     </footer>
 

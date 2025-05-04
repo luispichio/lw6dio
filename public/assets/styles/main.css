@@ -26,12 +26,12 @@ body {
     /* color: white; */
     /*font-family: 'Roboto';
     font-size: 22px*/
+    background-image: repeating-linear-gradient(135deg, hsla(35,0%,71%,0.09) 0px, hsla(35,0%,71%,0.09) 1px,transparent 1px, transparent 11px),repeating-linear-gradient(45deg, hsla(35,0%,71%,0.09) 0px, hsla(35,0%,71%,0.09) 1px,transparent 1px, transparent 11px),linear-gradient(90deg, hsl(183,0%,100%),hsl(183,0%,100%));
     margin: 0;
 }
 
 section {
     display: block;
-    padding-top: 16px;
 }
 
 .section-contents {
@@ -52,11 +52,13 @@ section {
 footer {
     width: 100%;
     background-color: #464647;
-    height: 64;
+    height: 64px;
     margin-top: 32px;
-    text-align: right;
-    align-items: center;
-    align-content: center;
+    text-align: end;
+}
+
+footer:last-child {
+    padding-left: 32px;
 }
 
 .site-info {
@@ -87,10 +89,6 @@ nav {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: -webkit-sticky;
-    /* Safari */
-    position: sticky;
-    top: 0;
 }
 
 .toolbar li {
@@ -114,6 +112,10 @@ nav {
     background-color: #111;
 }
 
+.separator {
+    height: 64px;
+}
+
 /* Contenedores */
 .flex-container {
     display: flex;
@@ -124,6 +126,7 @@ nav {
     box-sizing: border-box;
     margin-bottom: 16px;
     justify-content: center;
+    align-items: center;
 }
 
 .grid-container {
@@ -132,6 +135,7 @@ nav {
     gap: 32px;
     box-sizing: border-box;
     padding: 16px;
+    padding-bottom: 0;
     margin-bottom: 16px;
     justify-content: center;
     align-content: center;
@@ -161,6 +165,12 @@ nav {
     padding: 2px 16px 16px 16px;
 }
 
+.two_column_ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
 .title {
     position: relative;
     display: inline-block;
@@ -185,9 +195,9 @@ nav {
 
 .social-icon {
     width: auto;
-    height: 42;
-    padding: 8;
-    padding-top: 12;
+    height: 42px;
+    padding: 8px;
+    padding-top: 12px;
 }
 
 .social-icon:hover {
