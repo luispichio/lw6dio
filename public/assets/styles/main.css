@@ -25,14 +25,16 @@
 }
 
 .hero-callsign {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 6em;
-    font-weight: normal;
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    font-size: 8em;
+    font-weight: bold;
     background: url('../images/argentina_400x250.jpg') no-repeat center center;
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    line-height: 0.75;
 }
 
 .content {
@@ -132,7 +134,7 @@ nav {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: clamp(0.5rem, 1.5vw, 1.5rem);
+    font-size: clamp(0.7rem, 1.5vw, 1.5rem);
     font-weight: bold;
 }
 
