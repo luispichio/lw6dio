@@ -15,13 +15,13 @@
     background-size: cover;
 }
 
-.hero-callsign-background {
+.hero-callsign-blur-background {
     position: absolute;
     right: 5%;
     top: 15%;
     transform: translateY(-50%);
     backdrop-filter: blur(3px);
-    border-radius: 32px;
+    border-radius: 16px;    
 }
 
 .hero-callsign {
@@ -35,6 +35,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 0.75;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media screen and (max-width: 640px) {
+    .hero-callsign-blur-background {
+        right: 50%;
+        transform: translateX(50%) translateY(-50%);
+        font-size: 0.85em;
+    }
 }
 
 .content {
@@ -109,6 +123,7 @@ nav {
     /* Safari */
     position: sticky;
     top: 0;
+    z-index: 20;
 }
 
 .toolbar {
