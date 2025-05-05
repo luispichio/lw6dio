@@ -9,6 +9,32 @@
     height: 16px;
 }
 
+.hero-image {
+    height: 25%;
+    background: url('/public/assets/images/header.webp') no-repeat right center;
+    background-size: cover;
+}
+
+.hero-callsign-background {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    transform: translateY(-50%);
+    backdrop-filter: blur(3px);
+    border-radius: 32px;
+}
+
+.hero-callsign {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6em;
+    font-weight: normal;
+    background: url('/public/assets/images/argentina_400x250.jpg') no-repeat center center;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .content {
     padding-left: 2%;
     width: 100%;
