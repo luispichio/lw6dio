@@ -1,3 +1,4 @@
+/* modifica estilos del QRZ */
 #t_bio.biodiv {
     background-color: #FFFFFF;
     padding: 0;
@@ -9,32 +10,21 @@
     height: 16px;
 }
 
+/* hero */
 .hero-image {
     height: 25%;
     background: url('../images/header.webp') no-repeat right center;
     background-size: cover;
 }
 
-.hero-callsign-blur-background {
+/* background con blur */
+.hero-callsign {
     position: absolute;
     right: 5%;
     top: 15%;
     transform: translateY(-50%);
     backdrop-filter: blur(3px);
-    border-radius: 16px;    
-}
-
-.hero-callsign {
-    font-family: "New Amsterdam", sans-serif;
-    font-style: normal;
-    font-size: 8em;
-    font-weight: bold;
-    background: url('../images/argentina_400x250.jpg') no-repeat center center;
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 0.75;
+    border-radius: 16px;
     animation: fadeIn 1s ease-in;
 }
 
@@ -43,11 +33,30 @@
     to { opacity: 1; }
 }
 
+/* licencia que usa como textura una imágen (sobre el fondo en blur) */
+.hero-callsign div {
+    font-family: "New Amsterdam", sans-serif;
+    font-style: normal;
+    font-size: 8em;
+    font-weight: bold;
+    background: url('../images/argentina_460x288.webp') no-repeat center center;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 0.75;
+}
+
+/* ajustes para resoluciones bajas (celus viejos?) */
 @media screen and (max-width: 640px) {
-    .hero-callsign-blur-background {
+    .hero-callsign {
         right: 50%;
         transform: translateX(50%) translateY(-50%);
         font-size: 0.85em;
+    }
+
+    .hero-callsign div {
+        background-size: 380px;
     }
 }
 
@@ -157,11 +166,12 @@ nav {
     background-color: #111;
 }
 
+/* separador para "trucar" el ancho de la barra de navegación (hasta tanto aprenda a hacerlo mejor) */
 .separator {
     height: 64px;
 }
 
-/* Contenedores */
+/* contenedores */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -187,7 +197,7 @@ nav {
     width: 100%;
 }
 
-/* Tarjetas */ 
+/* tarjetas */ 
 .card {
     background-color: #fafafa;
     /*padding: 16px;*/
