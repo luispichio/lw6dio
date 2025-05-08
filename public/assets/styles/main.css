@@ -26,11 +26,37 @@
     backdrop-filter: blur(3px);
     border-radius: 16px;
     animation: fadeIn 1s ease-in;
+
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Shrink */
+.hvr-shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-shrink:hover,
+.hvr-shrink:focus,
+.hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
 }
 
 /* licencia que usa como textura una imágen (sobre el fondo en blur) */
@@ -63,7 +89,7 @@
 .content {
     padding-left: 2%;
     width: 100%;
-    max-width: 96%; 
+    max-width: 96%;
 }
 
 html {
@@ -77,7 +103,7 @@ body {
     /* color: white; */
     /*font-family: 'Roboto';
     font-size: 22px*/
-    background-image: repeating-linear-gradient(135deg, hsla(35,0%,71%,0.09) 0px, hsla(35,0%,71%,0.09) 1px,transparent 1px, transparent 11px),repeating-linear-gradient(45deg, hsla(35,0%,71%,0.09) 0px, hsla(35,0%,71%,0.09) 1px,transparent 1px, transparent 11px),linear-gradient(90deg, hsl(183,0%,100%),hsl(183,0%,100%));
+    background-image: repeating-linear-gradient(135deg, hsla(35, 0%, 71%, 0.09) 0px, hsla(35, 0%, 71%, 0.09) 1px, transparent 1px, transparent 11px), repeating-linear-gradient(45deg, hsla(35, 0%, 71%, 0.09) 0px, hsla(35, 0%, 71%, 0.09) 1px, transparent 1px, transparent 11px), linear-gradient(90deg, hsl(183, 0%, 100%), hsl(183, 0%, 100%));
     margin: 0;
 }
 
@@ -123,7 +149,7 @@ footer:last-child {
     background-color: #67b3b6;
 }
 
-/* Barra de navegación */ 
+/* Barra de navegación */
 nav {
     margin: 0;
     padding: 0;
@@ -166,6 +192,10 @@ nav {
     background-color: #111;
 }
 
+.toolbar li a:active {
+    background-color: #67b3b6;
+}
+
 /* separador para "trucar" el ancho de la barra de navegación (hasta tanto aprenda a hacerlo mejor) */
 .separator {
     height: 64px;
@@ -197,19 +227,25 @@ nav {
     width: 100%;
 }
 
-/* tarjetas */ 
+/* tarjetas */
 .card {
-    background-color: #fafafa;
+    /*background-color: #fafafa;*/
     /*padding: 16px;*/
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /*border-radius: 16px;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
     transition: 0.3s;
     font-size: 16px;
     text-decoration: none;
+    border-style: solid;
+    border-width: 1;
+    padding: 8;
+    backdrop-filter: blur(2px);
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+    border-style: solid;
+    border-width: 1;
 }
 
 .card img {
