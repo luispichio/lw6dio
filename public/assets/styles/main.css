@@ -74,7 +74,7 @@
 }
 
 /* ajustes para resoluciones bajas (celus viejos?) */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
     .hero-callsign {
         right: 50%;
         transform: translateX(50%) translateY(-50%);
@@ -84,6 +84,28 @@
     .hero-callsign div {
         background-size: 380px;
     }
+
+    .iframe-scaled {
+        zoom: 0.85;
+        -moz-transform: scale(0.85);
+        transform: scale(0.85);
+        -o-transform: scale(0.85);
+        -webkit-transform: scale(0.85);
+    }
+
+    #livestream {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+#livestream {
+    zoom: 0.85;
+    -moz-transform: scale(0.85);
+    transform: scale(0.85);
+    -o-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
 }
 
 .content {
@@ -114,16 +136,6 @@ section {
 .section-contents {
     padding-left: 2%;
     padding-right: 2%;
-}
-
-#livestream {
-    zoom: 0.85;
-    -moz-transform: scale(0.85);
-    /*-moz-transform-origin: 0 0;*/
-    -o-transform: scale(0.85);
-    /*-o-transform-origin: 0 0;*/
-    -webkit-transform: scale(0.85);
-    /*-webkit-transform-origin: 0 0;*/
 }
 
 footer {
